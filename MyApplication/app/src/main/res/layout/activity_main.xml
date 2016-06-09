@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Ouvrir"
+            android:id="@+id/ouvrir"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Prendre photo"
+            android:id="@+id/prendre"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Editer"
+            android:id="@+id/editer"/>
+        </TableRow>
+        <TableRow>
+        <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Caricaturer"
+                android:id="@+id/filtres"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:id="@+id/sauvegarder"/>
+        <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Quitter"
+                android:id="@+id/quitter"/>
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"/>
+    </LinearLayout>
+</LinearLayout>
